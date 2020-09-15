@@ -11,8 +11,14 @@ public class PizzaCost1 {
         labour = 1.50;
         heat = 0.75;
         
-        System.out.println("Please enter the size of your pizza in inches");
+        System.out.print("Please enter the size of your pizza in inches:");
         size = s.nextDouble();
+        System.out.print("Enter the amount of toppings you would like:");
+        topping = s.nextDouble();
+        
+        //Calculate
+        total = (size * 0.5) + (topping * 0.75) + labour + heat;
+        System.out.println("Pizza will cost $" + total);
         
     }
     
