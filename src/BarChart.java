@@ -31,7 +31,10 @@ public class BarChart {
         
         //drawing bars
         p.setWidth(50);
-        makeBar(p, 0,-120, v1, Color.red);
+        makeBar(p, -180,-120, v1, Color.red);
+        makeBar(p,-70, -120, v2, Color.blue);
+        makeBar(p, 40, -120,v3, Color.green);
+        makeBar(p, 160, -120, v4, Color.yellow);
        
     }
     
@@ -45,7 +48,7 @@ public class BarChart {
         p.up();
         p.move(15);
         p.down();
-        p.drawString(length+"");
+        p.drawString(""+ length);
     
     }
     
