@@ -48,6 +48,9 @@ public class BarChart {
         p.up();
         p.move(15);
         p.down();
+        p.up();
+        p.setColor(Color.black);
+        p.move(xloc,-170);
         p.drawString(""+ length);
     
     }
